@@ -25,7 +25,7 @@ var pData = {
   right: false,
   x: 0,
   y: 0
-  //damage: 5,
+  //dmg: 5,
   //health: 100,
   //ARmm: 0,
   //SRmm: 0,
@@ -34,7 +34,9 @@ var pData = {
   //explosive: 0,
   //scoped: false,
   //crouch: false,
-  //prone: false
+  //prone: false,
+  //weapon: "hands",
+  //gun: false
 }
 
 var lastData = {}; // Stores the last data recieved, for the target
@@ -133,13 +135,17 @@ function tag() {
     pData.target = lastData.target;
     socket.emit('kill', toKill);
   }
+  
   //function interact(){
   //var a = pData.x - lastData.x;
   //var b = pData.y - lastData.y;
   //var dist = Math.sqrt( a*a + b*b );
   //console.log(dist);
   //if (dist < 50) {
-    //
+    //if(pData.weapon.equals("AR"){
+  //pdata.weapon = "AR"
+  //pdata.gun = true
+  //pdata.dmg = 20
 //}
 
 function send() {
