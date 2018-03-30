@@ -25,6 +25,9 @@ var pData = {
   right: false,
   x: 0,
   y: 0
+  //damage: 5,
+  //health: 100
+  
 }
 
 var lastData = {}; // Stores the last data recieved, for the target
