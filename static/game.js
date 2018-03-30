@@ -26,8 +26,15 @@ var pData = {
   x: 0,
   y: 0
   //damage: 5,
-  //health: 100
-  
+  //health: 100,
+  //ARmm: 0,
+  //SRmm: 0,
+  //9mm: 0,
+  //shells: 0,
+  //explosive: 0,
+  //scoped: false,
+  //crouch: false,
+  //prone: false
 }
 
 var lastData = {}; // Stores the last data recieved, for the target
@@ -126,7 +133,14 @@ function tag() {
     pData.target = lastData.target;
     socket.emit('kill', toKill);
   }
-}
+  //function interact(){
+  //var a = pData.x - lastData.x;
+  //var b = pData.y - lastData.y;
+  //var dist = Math.sqrt( a*a + b*b );
+  //console.log(dist);
+  //if (dist < 50) {
+    //
+//}
 
 function send() {
   msg = document.getElementById('msg');
