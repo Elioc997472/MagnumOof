@@ -34,7 +34,6 @@ var pData = {
   //explosive: 0,
   //scoped: false,
   //crouch: false,
-  //prone: false,
   //weapon: "hands",
   //gun: false
 }
@@ -135,6 +134,7 @@ function tag() {
     pData.target = lastData.target;
     socket.emit('kill', toKill);
   }
+}//that missing bracket might be my fault. it's right here.
   
   //function interact(){
   //var a = pData.x - lastData.x;
@@ -142,11 +142,12 @@ function tag() {
   //var dist = Math.sqrt( a*a + b*b );
   //console.log(dist);
   //if (dist < 50) {
-    //if(pData.weapon.equals("AR"){
+    //if(pData.weapon.equals("AR"){ NTS: goota fix this
   //pdata.weapon = "AR"
   //pdata.gun = true
   //pdata.dmg = 20
 //}
+  //else if(
 
 function send() {
   msg = document.getElementById('msg');
